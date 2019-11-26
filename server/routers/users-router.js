@@ -5,7 +5,7 @@ const usersStore = require(`../database/users-req.js`);
 const bodyParser = require(`body-parser`);
 const formParser = require(`connect-multiparty`);
 const router = new Router();
-const bcrypt = require(`bcrypt`);
+const bcrypt = require(`bcryptjs`);
 
 /* Парсим тело запроса в формат json */
 router.use(bodyParser.json());

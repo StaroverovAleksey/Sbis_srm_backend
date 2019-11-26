@@ -4,7 +4,7 @@ const async = require(`../utils/async.js`);
 const usersStore = require(`../database/users-req.js`);
 const formParser = require(`connect-multiparty`);
 const router = new Router();
-const bcrypt = require(`bcrypt`);
+const bcrypt = require(`bcryptjs`);
 const jwt = require(`jwt-simple`);
 const config = `ihHiLbYTxWEbCyOpVRjlD`;
 
