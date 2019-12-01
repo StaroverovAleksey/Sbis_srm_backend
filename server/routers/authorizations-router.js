@@ -22,6 +22,7 @@ router.post(`/`, multiparty, [
   check(`name`).trim().escape(),
   check(`password`).trim().escape()
 ], async(async (req, res) => {
+  console.log(111);
   let errors = validationResult(req).errors;
   const answer = await usersStore.getToName(req.body.name);
   if (answer) {

@@ -11,7 +11,7 @@ app.use(`/api/users`, usersRouter);
 app.use(`/api/licenses`, licensesRouter);
 app.use(`/api/authorizations`, authorizationRouter);
 
-const HOSTNAME = process.env.SERVER_HOST || `0.0.0.0`;
+const HOSTNAME = process.env.SERVER_HOST || `localhost`;
 const PORT = parseInt(process.env.SERVER_PORT, 10) || 3000;
 const serverAddress = `http://${HOSTNAME}:${PORT}`;
 

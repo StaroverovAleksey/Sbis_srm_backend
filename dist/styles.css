@@ -270,8 +270,8 @@
 }
 
 .licenses__list:first-child {
-  font-weight: 400;
-  background: #C7C7C7;
+  font-weight: 400 !important;
+  background: #C7C7C7 !important;
 }
 
 .dependence__item {
